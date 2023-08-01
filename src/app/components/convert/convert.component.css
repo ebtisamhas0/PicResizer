@@ -82,18 +82,6 @@
   margin-top: 120px;
   text-align: center;
 }
-.grid-container--alt {
-  max-width: 70%;
-  grid-template-columns: auto auto auto;
-  top: 80%;
-  text-align: center;
-  justify-content: space-around;
-  position: absolute;
-  top: 75%;
-  margin: 10% 10% 0% 12%;
-  gap: 15px;
-
-}
 
   #uploadImg {
     height: 35%;
@@ -111,6 +99,22 @@
   color: aliceblue;
   font-size: large;
   margin-top: 5%;
+}
+#imageInfoContainer {
+    height: 35%;
+    width: 50%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    position: absolute;
+    top: 45%;
+    right: 25%;
+    background-color:rgb(226, 226, 226,0.7) ;
+}
+#imageInfoContainer #imageInfo1 {
+    background-color: rgb(251, 252, 253);
+    height: 80px;
+    padding: 0px 15px 0px 15px;
+
 }
 
 .custom-file-upload input[type="file"] {
@@ -142,19 +146,49 @@
     font-size: larger;
     font-weight: bold;
 }
-footer {
+#imageInfoContainer #imageInfo {
+    display: inline;
+    float: left;
+    font-size: large;
+    margin-top: 20px;
+}
+#imageInfoContainer #formatSelect {
+    display: inline;
+    float: right;
+    margin-top: 20px;
+    width: 75px;
+    height: 50px;
+    border-radius: 5px;
+
+}
+#imageInfoContainer #convertButton {
+    margin: 35px 15px;
+    width: 215px;
+    height: 70px;
+    background-color: rgb(255, 200, 62);
+    border: none;
+    border-radius: 15px;
+    font-size: large;
+}
+#downloadContainer {
+   float: left;
+   margin-left: 15px;
+}
+footer {  
   display: flex;
   position: absolute;
   background-color: rgb(226, 226, 226,0.7);
   height: 40%;
-  top: 150%;
+  top: 130%;
+  left: 0%;
   min-width: 100%;
   justify-content: space-around;
   align-items: center;
 }
 .rights {
   position: absolute;
-  top: 190%;
+  top: 170%;
+  left: 0;
   background-color: #000;
   text-align: center;
   color: aliceblue;
@@ -178,12 +212,37 @@ footer {
   margin-right: 10%;
   margin-left: 8%;
 }
+#imageInfoContainer {
+    width: 270px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -1%);
+}
+
+#imageInfoContainer #formatSelect {
+    margin-top: 80px;
+    width: 65px;
+    height: 35px;
+    border-radius: 5px;
+    margin-left: 0px;
+}
+
+#imageInfoContainer #convertButton {
+    margin-top: 35px;
+    width: 140px;
+    height: 50px;
+    background-color: rgb(255, 200, 62);
+    border: none;
+    border-radius: 15px;
+    font-size: large;
+}
+
 footer {
-  top: 230%;
+  top: 120%;
   height: 50%;
   display: inline;
 }
 .rights {
-  top: 280%;
+  top: 170%;
 }
 }

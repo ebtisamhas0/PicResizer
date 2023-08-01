@@ -1,0 +1,62 @@
+<div class="grid-container">
+ 
+    <!-- Highlight Card -->
+    <div><h1>Convert your image </h1></div>
+    <div><h2>100% automatically and</h2></div>
+    <div><span class="!py-1 !px-4 bg-brush bg-no-repeat bg-cover bg-center">
+      Free
+    </span></div>
+    <div>
+      <div id="uploadImg">
+        <div id="uploadButton">
+          <label for="file-upload" class="custom-file-upload">
+            Upload Image
+            <input id="uploadBut" type="file" (change)="onFileSelected($event)"/>
+          </label>
+        </div>
+      </div>
+    </div> 
+    <div id="imageInfoContainer" style="display:none">
+      <div id="imageInfo1">
+      <p id="imageInfo"></p>
+      <select id="formatSelect" name="formatSelect" style="display:none" (change)="convertFormatChanged($event)">
+        <option value="jpeg">JPEG</option>
+        <option value="png">PNG</option>
+        <option value="webp">WEBP</option>
+      </select>
+      
+      </div>
+      <button id="convertButton" style="display:none"  (click)="onConvertButtonClicked()">Convert
+        <svg width="25px" height="25px" viewBox="0 0 24 24" style="vertical-align: middle;" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z" fill="#000"></path> </g></svg>   
+      </button>
+      <div id="downloadContainer"></div>
+    </div>
+    
+     
+       <!-- Footer -->
+    <footer>
+        <div>
+      <h2>Image tools</h2>
+      <h4 (click)="navigateToEdit()">Image resizer</h4>
+      <h4 (click)="navigateToEdit()">Crop image</h4>
+      <h4 (click)="navigateToEdit()">Rotate image</h4>
+    </div>
+      <div>
+      <h2>Image convertors</h2>
+      <h4 (click)="navigateToConvert()">JPG to PNG </h4>
+      <h4 (click)="navigateToConvert()">PNG to JPG </h4>
+      <h4 (click)="navigateToConvert()">WebP to JPG </h4>
+    
+    </div>
+    
+    <div>
+      <h2>About</h2>
+      <h4>Contact us</h4>
+    </div>
+      </footer>
+      <div class="rights">
+       <h4>© 2023 PicResizer. All rights reserved.</h4>
+      </div>
+    
+  
+  

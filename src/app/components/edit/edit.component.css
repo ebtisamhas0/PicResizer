@@ -1,0 +1,265 @@
+#img {
+    position: absolute;
+    top: 25%;
+    right: 15%;
+   }
+#resized-image-container {
+    position: absolute;
+    top: 30%;
+    right: 25%;
+}
+#cropped-image-container {
+    position: absolute;
+    top: 30%;
+    right: 25%;
+}
+
+  
+.grid-container--alt{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    gap: 15px;
+    border: 1px solid rgb(0, 0, 0,0.1);
+    border-radius: 5px;
+    width: 500px;
+    padding: 10px 0px 0px 10px;
+    justify-content: space-around;
+}
+.resize h3{
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 0%;
+}
+.crop h3 {
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 0%;
+}    
+.rotate h3 {
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 0%;
+}  
+.resizeSet {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    border: 1px solid rgb(0, 0, 0,0.1);
+    border-radius: 5px;
+    width: 507px;
+    padding-left: 7px;
+    padding-bottom: 7px;
+}
+.resizeSet span {
+    font-size: large;
+    margin-right: 160px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.resizeSet input {
+    width: 37%;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 7px;
+    display: inline-block;
+}
+.resizeSet .resizeBut {
+    margin-top: 10%;
+    width: 270px;
+    height: 75px;
+    border-radius:15px ;
+    background-color: rgb(255, 200, 62);
+    font-size: large;
+    border: none;
+}
+.resizeSet .subBut {
+    margin-top: 10%;
+    width: 270px;
+    height: 75px;
+    border-radius:15px ;
+    background-color: rgb(255, 200, 62);
+    font-size: large;
+    border: none;
+}
+.resizeSet .resBut {
+    margin-top: 10%;
+    width: 150px;
+    height: 75px;
+    border-radius:15px ;
+    border: 1px solid rgb(255, 200, 62);
+    font-size: large;
+    margin-left: 5px;
+    background-color: white;
+}
+.resizeSet .cropInput {
+    width: 37%;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 7px;
+    display: inline-block;
+}
+.flipSvg {
+    margin-right: 27px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    padding: 25px 55px 25px 55px;
+    margin-top: 8px;
+}
+.resizeSet .flipSpan {
+    display: inline-block;
+    margin-top: 8px;
+    margin-left: 25px;
+    margin-right: 87px;
+}
+.resizeSet .rotateBut {
+    margin-top: 5%;
+    width: 270px;
+    height: 75px;
+    border-radius:15px ;
+    background-color: rgb(255, 200, 62);
+    font-size: large;
+    border: none;
+    display: block;
+}
+.resizeSet .rotateH2 {
+    margin-top: 2px;
+}
+.resizeSet .rotateSpan {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 53px;
+}
+footer {
+    display: flex;
+    position: absolute;
+    background-color: rgb(226, 226, 226,0.7);
+    height: 40%;
+    top: 110%;
+    min-width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .rights {
+    position: absolute;
+    top: 150%;
+    background-color: #000;
+    text-align: center;
+    color: aliceblue;
+    width: 100%;
+  }
+
+
+/* For small screens */
+@media only screen and (max-width: 768px) {
+    #img {
+      position: static;
+      display: block;
+      margin: 0 auto;
+    }
+    #img img {
+        width: 250px;
+        height: 250px;
+        margin-left: 13%;
+        margin-top: 25%;
+    }
+    .grid-container--alt{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        position: absolute;
+        top: 52%;
+        left: 5%;
+        border: 1px solid rgb(0, 0, 0,0.1);
+        border-radius: 5px;
+        padding: 10px 0px 0px 10px;
+        gap: 0px;
+        width: 90%;
+    }
+    .resizeSet {
+        position: absolute;
+        top: 60%;
+        left: 5%;
+        border: 1px solid rgb(0, 0, 0,0.1);
+        border-radius: 5px;
+        width: 90%;
+        padding-bottom: 7px;
+    }
+    .resizeSet span {
+        font-size: large;
+        margin-right: 35px;
+        display: inline-block;
+        margin-bottom: 10px;
+        margin-left: 60px;
+    }
+    .resizeSet input {
+        width: 33%;
+        height: 40px;
+        border-radius: 5px;
+        display: inline-block;
+        margin-left: 28px;
+    }
+    .resizeSet .cropInput {
+        width: 33%;
+        height: 40px;
+        border-radius: 5px;
+        display: inline-block;
+        margin-left: 28px;
+    }
+    .flipSvg {
+        margin-right: 15px;
+        margin-left: 25px;
+        border-radius: 8px;
+        border: 1px solid lightgray;
+        padding: 25px 35px 25px 35px;
+        margin-top: 8px;
+    }
+    .resizeSet .flipSpan {
+        display: inline-block;
+        margin-top: 8px;
+        margin-left: 25px;
+        margin-right: 15px;
+    }
+    .resizeSet .rotateH2 {
+        margin-top: 2px;
+    }
+    .resizeSet .rotateSpan {
+        display: inline-block;
+        margin-left: 25px;
+        margin-right: 2px;
+    }
+    .resizeSet .resBut {
+        margin-top: 10%;
+        width: 265px;
+        height: 75px;
+        border-radius:15px ;
+        border: 1px solid rgb(255, 200, 62);
+        font-size: large;
+        background-color: white;
+        margin-left: 25px;
+    }
+    .resizeSet button{
+       margin-left: 19px;
+    }
+    
+    #resized-image-container {
+        position: static;
+        display: block;
+        margin: 0 auto;
+    }
+    #cropped-image-container {
+        position: static;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        top: 125%;
+        height: 60%;
+        display: inline;
+      }
+      .rights {
+        top: 185%;
+      }
+  }
+  
